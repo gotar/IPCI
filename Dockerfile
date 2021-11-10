@@ -13,7 +13,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -\
   && apt-get update -qq && apt-get install -qq --no-install-recommends \
-    pkg-config libxml2-dev libxslt-dev git libpq-dev nodejs \
+    pkg-config libxml2-dev libxslt-dev git libpq-dev openssh-client \
+    build-essential shared-mime-info nodejs \
   && apt-get upgrade -qq \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*\
