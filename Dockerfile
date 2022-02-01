@@ -18,7 +18,7 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -\
   && apt-get update -qq && apt-get install -qq --no-install-recommends \
     pkg-config libxml2-dev libxslt-dev git libpq-dev openssh-client \
     build-essential shared-mime-info nodejs \
-    google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst \
+    google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst \
   && apt-get upgrade -qq \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*\
